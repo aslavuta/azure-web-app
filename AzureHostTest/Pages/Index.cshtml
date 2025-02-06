@@ -1,10 +1,15 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home page";    
 }
-
+<form method="post">
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">this is AIS web app</a>.</p>
 </div>
+
+<div>Applicasion setting</div>
+<input type="submit" value="Read!" asp-page-handler="ReadApplicationProperty"></input>
+<p>@Model.Message</p>
+</form>
