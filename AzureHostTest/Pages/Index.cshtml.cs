@@ -23,7 +23,7 @@ namespace AzureHostTest.Pages
 
         public void OnPostReadApplicationProperty()
         {
-            var appSettingValue = Configuration["ApplicationSetting1"];
+            var appSettingValue = Configuration["Environment"];
             Message = $"Application Settings value is: {appSettingValue}";
         }
     }
